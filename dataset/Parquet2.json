@@ -1,0 +1,20 @@
+{
+	"name": "Parquet2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage4",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "amazoncsv",
+				"fileSystem": "output"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
