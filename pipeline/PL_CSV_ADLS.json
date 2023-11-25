@@ -1,0 +1,367 @@
+{
+	"name": "PL_CSV_ADLS",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy data1",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "DelimitedTextSource",
+						"storeSettings": {
+							"type": "AzureBlobFSReadSettings",
+							"recursive": true,
+							"wildcardFileName": "*",
+							"enablePartitionDiscovery": false
+						},
+						"formatSettings": {
+							"type": "DelimitedTextReadSettings"
+						}
+					},
+					"sink": {
+						"type": "ParquetSink",
+						"storeSettings": {
+							"type": "AzureBlobFSWriteSettings"
+						},
+						"formatSettings": {
+							"type": "ParquetWriteSettings"
+						}
+					},
+					"enableStaging": false,
+					"enableSkipIncompatibleRow": true,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "index",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "index",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "Order ID",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "order_id",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "Date",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "date",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "Status",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "status",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "Fulfilment",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "fulfilment",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "Sales Channel ",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "sales_channel ",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "ship-service-level",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ship_service_level",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "Style",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "Style",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "SKU",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "sku",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "Category",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "category",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "Size",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "size",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "ASIN",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "asin",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "Courier Status",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "courier_status",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "Qty",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "qty",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "currency",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "currency",
+									"type": "String",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "Amount",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "amount",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "ship-city",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ship_city",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "ship-state",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ship_state",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "ship-postal-code",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ship_postal_code",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "ship-country",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "ship_country",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "promotion-ids",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "promotion_ids",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "B2B",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "b2b",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "fulfilled-by",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "fulfilled_by",
+									"physicalType": "UTF8"
+								}
+							},
+							{
+								"source": {
+									"name": "Unnamed: 22",
+									"type": "String",
+									"physicalType": "String"
+								},
+								"sink": {
+									"name": "unnamed_22",
+									"physicalType": "UTF8"
+								}
+							}
+						],
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "DS_CSV",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "DS_PAR_ADLS",
+						"type": "DatasetReference"
+					}
+				]
+			},
+			{
+				"name": "Delete1",
+				"type": "Delete",
+				"dependsOn": [
+					{
+						"activity": "Copy data1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataset": {
+						"referenceName": "DS_CSV",
+						"type": "DatasetReference"
+					},
+					"enableLogging": false,
+					"storeSettings": {
+						"type": "AzureBlobFSReadSettings",
+						"recursive": true,
+						"enablePartitionDiscovery": false
+					}
+				}
+			}
+		],
+		"annotations": []
+	}
+}

@@ -1,0 +1,24 @@
+{
+	"name": "TR_SCH_SCV_AMAZONSALES",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_CSV_ADLS",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Day",
+				"interval": 1,
+				"startTime": "2023-11-25T06:59:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}
