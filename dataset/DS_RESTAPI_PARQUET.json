@@ -1,8 +1,8 @@
 {
-	"name": "DS_PAR_ADLS",
+	"name": "DS_RESTAPI_PARQUET",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "LS_PAR_ADLS",
+			"referenceName": "LS_RESTAPI_PAR",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "amazon_sales_report",
+				"folderPath": "restdata",
 				"fileSystem": "output"
 			},
 			"compressionCodec": "snappy"

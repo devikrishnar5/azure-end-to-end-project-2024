@@ -1,0 +1,211 @@
+{
+	"name": "PL_RESTAPI_CSV",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy data1",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "RestSource",
+						"httpRequestTimeout": "00:01:40",
+						"requestInterval": "00.00:00:00.010",
+						"requestMethod": "GET",
+						"paginationRules": {
+							"supportRFC5988": "true"
+						}
+					},
+					"sink": {
+						"type": "ParquetSink",
+						"storeSettings": {
+							"type": "AzureBlobFSWriteSettings"
+						},
+						"formatSettings": {
+							"type": "ParquetWriteSettings"
+						}
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"path": "$['id']"
+								},
+								"sink": {
+									"name": "id"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Sku']"
+								},
+								"sink": {
+									"name": "sku"
+								}
+							},
+							{
+								"source": {
+									"path": "$['TP 1']"
+								},
+								"sink": {
+									"name": "tp1"
+								}
+							},
+							{
+								"source": {
+									"path": "$['TP 2']"
+								},
+								"sink": {
+									"name": "tp2"
+								}
+							},
+							{
+								"source": {
+									"path": "$['index']"
+								},
+								"sink": {
+									"name": "index"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Weight']"
+								},
+								"sink": {
+									"name": "weight"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Catalog']"
+								},
+								"sink": {
+									"name": "catalog"
+								}
+							},
+							{
+								"source": {
+									"path": "$['MRP Old']"
+								},
+								"sink": {
+									"name": "mrpold"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Ajio MRP']"
+								},
+								"sink": {
+									"name": "ajio_mrp"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Category']"
+								},
+								"sink": {
+									"name": "category"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Style Id']"
+								},
+								"sink": {
+									"name": "style_Id"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Paytm MRP']"
+								},
+								"sink": {
+									"name": "paytm_mrp"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Amazon MRP']"
+								},
+								"sink": {
+									"name": "amazon_mrp"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Myntra MRP']"
+								},
+								"sink": {
+									"name": "myntramrp"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Flipkart MRP']"
+								},
+								"sink": {
+									"name": "flipkart_mrp"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Limeroad MRP']"
+								},
+								"sink": {
+									"name": "limeroadmrp"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Snapdeal MRP']"
+								},
+								"sink": {
+									"name": "snapdeal_mrp"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Final MRP Old']"
+								},
+								"sink": {
+									"name": "final_mrp_old"
+								}
+							},
+							{
+								"source": {
+									"path": "$['Amazon FBA MRP']"
+								},
+								"sink": {
+									"name": "amazon_fba_mrp"
+								}
+							}
+						]
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "DS_RESRAPI",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "DS_RESTAPI_PARQUET",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": []
+	}
+}

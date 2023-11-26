@@ -1,0 +1,116 @@
+{
+	"name": "DS_SQL_PAR",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQL_PAR",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "output"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "index",
+				"type": "UTF8"
+			},
+			{
+				"name": "order_id",
+				"type": "UTF8"
+			},
+			{
+				"name": "date",
+				"type": "UTF8"
+			},
+			{
+				"name": "status",
+				"type": "UTF8"
+			},
+			{
+				"name": "fulfilment",
+				"type": "UTF8"
+			},
+			{
+				"name": "sales_channel",
+				"type": "UTF8"
+			},
+			{
+				"name": "ship_service_level",
+				"type": "UTF8"
+			},
+			{
+				"name": "Style",
+				"type": "UTF8"
+			},
+			{
+				"name": "sku",
+				"type": "UTF8"
+			},
+			{
+				"name": "category",
+				"type": "UTF8"
+			},
+			{
+				"name": "size",
+				"type": "UTF8"
+			},
+			{
+				"name": "asin",
+				"type": "UTF8"
+			},
+			{
+				"name": "courier_status",
+				"type": "UTF8"
+			},
+			{
+				"name": "qty",
+				"type": "UTF8"
+			},
+			{
+				"name": "currency",
+				"type": "UTF8"
+			},
+			{
+				"name": "amount",
+				"type": "UTF8"
+			},
+			{
+				"name": "ship_city",
+				"type": "UTF8"
+			},
+			{
+				"name": "ship_state",
+				"type": "UTF8"
+			},
+			{
+				"name": "ship_postal_code",
+				"type": "UTF8"
+			},
+			{
+				"name": "ship_country",
+				"type": "UTF8"
+			},
+			{
+				"name": "promotion_ids",
+				"type": "UTF8"
+			},
+			{
+				"name": "b2b",
+				"type": "UTF8"
+			},
+			{
+				"name": "fulfilled_by",
+				"type": "UTF8"
+			},
+			{
+				"name": "unnamed_22",
+				"type": "UTF8"
+			}
+		]
+	}
+}
