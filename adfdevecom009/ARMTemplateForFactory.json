@@ -2102,6 +2102,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
+						"fileName": "amazon_sales_report",
 						"folderPath": "amazon_sales_report",
 						"fileSystem": "output"
 					},
@@ -2506,6 +2507,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
+						"fileName": "International_sale_report",
 						"folderPath": "International_sale_report",
 						"fileSystem": "output"
 					},
@@ -2628,8 +2630,8 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
-						"fileName": "International sale Report.csv",
-						"folderPath": "international_sale_report",
+						"fileName": "May-2022.csv",
+						"folderPath": "may_2022",
 						"fileSystem": "input"
 					},
 					"columnDelimiter": ",",
@@ -2698,6 +2700,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
+						"fileName": "may_2022",
 						"folderPath": "may_2022",
 						"fileSystem": "output"
 					},
@@ -3918,7 +3921,7 @@
 					"recurrence": {
 						"frequency": "Day",
 						"interval": 1,
-						"startTime": "2023-12-14T17:05:00",
+						"startTime": "2023-12-15T21:00:00",
 						"timeZone": "India Standard Time"
 					}
 				}

@@ -343,6 +343,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
+						"fileName": "International_sale_report",
 						"folderPath": "International_sale_report",
 						"fileSystem": "output"
 					},
@@ -463,8 +464,8 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
-						"fileName": "International sale Report.csv",
-						"folderPath": "international_sale_report",
+						"fileName": "May-2022.csv",
+						"folderPath": "may_2022",
 						"fileSystem": "input"
 					},
 					"columnDelimiter": ",",
@@ -531,6 +532,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
+						"fileName": "may_2022",
 						"folderPath": "may_2022",
 						"fileSystem": "output"
 					},

@@ -554,6 +554,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
+						"fileName": "amazon_sales_report",
 						"folderPath": "amazon_sales_report",
 						"fileSystem": "output"
 					},
