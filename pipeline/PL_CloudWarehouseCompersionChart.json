@@ -58,8 +58,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "Shiprocket",
-									"type": "String",
+									"name": "shiprocket",
 									"physicalType": "UTF8"
 								}
 							},
@@ -70,8 +69,7 @@
 									"physicalType": "String"
 								},
 								"sink": {
-									"name": "INCREFF",
-									"type": "String",
+									"name": "increff",
 									"physicalType": "UTF8"
 								}
 							}
