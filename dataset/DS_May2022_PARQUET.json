@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": "may_2022",
 				"folderPath": "may_2022",
 				"fileSystem": "output"
 			},

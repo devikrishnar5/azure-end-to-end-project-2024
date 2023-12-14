@@ -10,8 +10,8 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "International sale Report.csv",
-				"folderPath": "international_sale_report",
+				"fileName": "May-2022.csv",
+				"folderPath": "may_2022",
 				"fileSystem": "input"
 			},
 			"columnDelimiter": ",",

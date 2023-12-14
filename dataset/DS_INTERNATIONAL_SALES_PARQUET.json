@@ -10,6 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
+				"fileName": "International_sale_report",
 				"folderPath": "International_sale_report",
 				"fileSystem": "output"
 			},
