@@ -1,0 +1,20 @@
+{
+	"name": "DS_May2022_PARQUET",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_May2022_PARQUET",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "may_2022",
+				"fileSystem": "output"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}

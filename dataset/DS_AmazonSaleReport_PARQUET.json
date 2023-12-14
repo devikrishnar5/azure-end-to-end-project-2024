@@ -1,0 +1,20 @@
+{
+	"name": "DS_AmazonSaleReport_PARQUET",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_AmazonSaleReport_PARQUET",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "amazon_sales_report",
+				"fileSystem": "output"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}

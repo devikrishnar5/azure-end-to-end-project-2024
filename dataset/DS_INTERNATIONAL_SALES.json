@@ -1,0 +1,65 @@
+{
+	"name": "DS_INTERNATIONAL_SALES",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_INTERNATIONAL_SALES",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "International sale Report.csv",
+				"folderPath": "international_sale_report",
+				"fileSystem": "input"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "index",
+				"type": "String"
+			},
+			{
+				"name": "DATE",
+				"type": "String"
+			},
+			{
+				"name": "Months",
+				"type": "String"
+			},
+			{
+				"name": "CUSTOMER",
+				"type": "String"
+			},
+			{
+				"name": "Style",
+				"type": "String"
+			},
+			{
+				"name": "SKU",
+				"type": "String"
+			},
+			{
+				"name": "Size",
+				"type": "String"
+			},
+			{
+				"name": "PCS",
+				"type": "String"
+			},
+			{
+				"name": "RATE",
+				"type": "String"
+			},
+			{
+				"name": "GROSS AMT",
+				"type": "String"
+			}
+		]
+	}
+}
