@@ -1,0 +1,225 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adfdevecom009"
+		},
+		"AzureDataLakeStorage10_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage11_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage12_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage13_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage14_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage15_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage16_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage17_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage18_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage19_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage4_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage5_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage6_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage7_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage8_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage9_accountKey": {
+			"value": ""
+		},
+		"LS_ADLS_CSV_accountKey": {
+			"value": ""
+		},
+		"LS_Amazon Sale Report_accountKey": {
+			"value": ""
+		},
+		"LS_AmazonSaleReport_PARQUET_accountKey": {
+			"value": ""
+		},
+		"LS_BLOB_CSV_connectionString": {
+			"value": ""
+		},
+		"LS_CSVFILES_accountKey": {
+			"value": ""
+		},
+		"LS_CSV_ADLS_accountKey": {
+			"value": ""
+		},
+		"LS_CSV_ADLS1_accountKey": {
+			"value": ""
+		},
+		"LS_CSV_BLOB_accountKey": {
+			"value": ""
+		},
+		"LS_CloudWarehouseCompersionChart_PARQUET_accountKey": {
+			"value": ""
+		},
+		"LS_DS_CloudWarehouseCompersionChart_accountKey": {
+			"value": ""
+		},
+		"LS_INTERNATIONAL_SALES_accountKey": {
+			"value": ""
+		},
+		"LS_INTERNATIONAL_SALES_PARQUET_accountKey": {
+			"value": ""
+		},
+		"LS_May2022_accountKey": {
+			"value": ""
+		},
+		"LS_May2022_PARQUET_accountKey": {
+			"value": ""
+		},
+		"LS_PARQUET_ADLS2_accountKey": {
+			"value": ""
+		},
+		"LS_PAR_ADLS_accountKey": {
+			"value": ""
+		},
+		"LS_PAR_ADLS_BLOB_accountKey": {
+			"value": ""
+		},
+		"LS_RESTAPI_PAR_accountKey": {
+			"value": ""
+		},
+		"LS_SQL_PAR_accountKey": {
+			"value": ""
+		},
+		"LS_SqlServerTable_connectionString": {
+			"value": ""
+		},
+		"AzureDataLakeStorage10_properties_typeProperties_url": {
+			"value": "https://adlsdevecom.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage11_properties_typeProperties_url": {
+			"value": "https://adlsdevecom.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage12_properties_typeProperties_url": {
+			"value": "https://adlsdevecom.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage13_properties_typeProperties_url": {
+			"value": "https://adlsdevecom.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage14_properties_typeProperties_url": {
+			"value": "https://adlsdevecom.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage15_properties_typeProperties_url": {
+			"value": "https://adlsdevecom.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage16_properties_typeProperties_url": {
+			"value": "https://adlsdevecom.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage17_properties_typeProperties_url": {
+			"value": "https://adlsdevecom.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage18_properties_typeProperties_url": {
+			"value": "https://adlsdevecom.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage19_properties_typeProperties_url": {
+			"value": "https://adlsdevecom.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage4_properties_typeProperties_url": {
+			"value": "https://adlsdevecom.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage5_properties_typeProperties_url": {
+			"value": "https://adlsdevecom.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage6_properties_typeProperties_url": {
+			"value": "https://adlsdevecom.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage7_properties_typeProperties_url": {
+			"value": "https://adlsdevecom.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage8_properties_typeProperties_url": {
+			"value": "https://adlsdevecom.dfs.core.windows.net/"
+		},
+		"AzureDataLakeStorage9_properties_typeProperties_url": {
+			"value": "https://adlsdevecom.dfs.core.windows.net/"
+		},
+		"LS_ADLS_CSV_properties_typeProperties_url": {
+			"value": "https://adlsdevecom.dfs.core.windows.net/"
+		},
+		"LS_Amazon Sale Report_properties_typeProperties_url": {
+			"value": "https://adlsdevecom.dfs.core.windows.net/"
+		},
+		"LS_AmazonSaleReport_PARQUET_properties_typeProperties_url": {
+			"value": "https://adlsdevecom.dfs.core.windows.net/"
+		},
+		"LS_CSVFILES_properties_typeProperties_url": {
+			"value": "https://adlsdevecom.dfs.core.windows.net/"
+		},
+		"LS_CSV_ADLS_properties_typeProperties_url": {
+			"value": "https://adlsdevecom.dfs.core.windows.net/"
+		},
+		"LS_CSV_ADLS1_properties_typeProperties_url": {
+			"value": "https://adlsdevecom.dfs.core.windows.net/"
+		},
+		"LS_CSV_BLOB_properties_typeProperties_url": {
+			"value": "https://blobadevecom.dfs.core.windows.net/"
+		},
+		"LS_CloudWarehouseCompersionChart_PARQUET_properties_typeProperties_url": {
+			"value": "https://adlsdevecom.dfs.core.windows.net/"
+		},
+		"LS_DS_CloudWarehouseCompersionChart_properties_typeProperties_url": {
+			"value": "https://adlsdevecom.dfs.core.windows.net/"
+		},
+		"LS_INTERNATIONAL_SALES_properties_typeProperties_url": {
+			"value": "https://adlsdevecom.dfs.core.windows.net/"
+		},
+		"LS_INTERNATIONAL_SALES_PARQUET_properties_typeProperties_url": {
+			"value": "https://adlsdevecom.dfs.core.windows.net/"
+		},
+		"LS_May2022_properties_typeProperties_url": {
+			"value": "https://adlsdevecom.dfs.core.windows.net/"
+		},
+		"LS_May2022_PARQUET_properties_typeProperties_url": {
+			"value": "https://adlsdevecom.dfs.core.windows.net/"
+		},
+		"LS_PARQUET_ADLS2_properties_typeProperties_url": {
+			"value": "https://adlsdevecom.dfs.core.windows.net/"
+		},
+		"LS_PAR_ADLS_properties_typeProperties_url": {
+			"value": "https://adlsdevecom.dfs.core.windows.net/"
+		},
+		"LS_PAR_ADLS_BLOB_properties_typeProperties_url": {
+			"value": "https://adlsdevecom.dfs.core.windows.net/"
+		},
+		"LS_RESRAPI_properties_typeProperties_url": {
+			"value": "https://retoolapi.dev/5yDVOt/data"
+		},
+		"LS_RESTAPI_PAR_properties_typeProperties_url": {
+			"value": "https://adlsdevecom.dfs.core.windows.net/"
+		},
+		"LS_SQL_PAR_properties_typeProperties_url": {
+			"value": "https://adlsdevecom.dfs.core.windows.net/"
+		},
+		"EVT_TRIGGER_CLOUDWAREHOUSE_properties_typeProperties_scope": {
+			"value": "/subscriptions/ebf9de76-97ab-4029-b09a-0e5b73edc314/resourceGroups/rg_dev_ecommerse/providers/Microsoft.Storage/storageAccounts/adlsdevecom"
+		}
+	}
+}
