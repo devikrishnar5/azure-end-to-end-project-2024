@@ -464,8 +464,9 @@
 					"recurrence": {
 						"frequency": "Day",
 						"interval": 1,
-						"startTime": "2023-12-15T21:15:00",
-						"timeZone": "India Standard Time"
+						"startTime": "2023-12-15T21:23:00",
+						"timeZone": "India Standard Time",
+						"schedule": {}
 					}
 				}
 			},
