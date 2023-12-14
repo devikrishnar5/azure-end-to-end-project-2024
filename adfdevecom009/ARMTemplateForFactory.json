@@ -2791,6 +2791,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
+						"fileName": "plmarch2021",
 						"folderPath": "restdata",
 						"fileSystem": "output"
 					},
@@ -3866,6 +3867,36 @@
 			]
 		},
 		{
+			"name": "[concat(parameters('factoryName'), '/SCG_TRIGGER_REST_API')]",
+			"type": "Microsoft.DataFactory/factories/triggers",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"runtimeState": "Started",
+				"pipelines": [
+					{
+						"pipelineReference": {
+							"referenceName": "PL_RESTAPI_CSV",
+							"type": "PipelineReference"
+						},
+						"parameters": {}
+					}
+				],
+				"type": "ScheduleTrigger",
+				"typeProperties": {
+					"recurrence": {
+						"frequency": "Day",
+						"interval": 1,
+						"startTime": "2023-12-14T17:25:00",
+						"timeZone": "India Standard Time"
+					}
+				}
+			},
+			"dependsOn": [
+				"[concat(variables('factoryId'), '/pipelines/PL_RESTAPI_CSV')]"
+			]
+		},
+		{
 			"name": "[concat(parameters('factoryName'), '/SCH_SALES_TRIGGER')]",
 			"type": "Microsoft.DataFactory/factories/triggers",
 			"apiVersion": "2018-06-01",
@@ -3888,8 +3919,7 @@
 						"frequency": "Day",
 						"interval": 1,
 						"startTime": "2023-12-14T17:05:00",
-						"timeZone": "India Standard Time",
-						"schedule": {}
+						"timeZone": "India Standard Time"
 					}
 				}
 			},

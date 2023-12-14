@@ -616,6 +616,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
+						"fileName": "plmarch2021",
 						"folderPath": "restdata",
 						"fileSystem": "output"
 					},
