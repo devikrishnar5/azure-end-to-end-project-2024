@@ -543,115 +543,184 @@
 									},
 									{
 										"source": {
-											"name": "DATE",
+											"name": "Sku",
 											"type": "String",
 											"physicalType": "String"
 										},
 										"sink": {
-											"name": "DATE",
-											"type": "String",
+											"name": "sku",
 											"physicalType": "UTF8"
 										}
 									},
 									{
 										"source": {
-											"name": "Months",
+											"name": "Style Id",
 											"type": "String",
 											"physicalType": "String"
 										},
 										"sink": {
-											"name": "Months",
-											"type": "String",
+											"name": "style_Id",
 											"physicalType": "UTF8"
 										}
 									},
 									{
 										"source": {
-											"name": "CUSTOMER",
+											"name": "Catalog",
 											"type": "String",
 											"physicalType": "String"
 										},
 										"sink": {
-											"name": "CUSTOMER",
-											"type": "String",
+											"name": "catalog",
 											"physicalType": "UTF8"
 										}
 									},
 									{
 										"source": {
-											"name": "Style",
+											"name": "Category",
 											"type": "String",
 											"physicalType": "String"
 										},
 										"sink": {
-											"name": "Style",
-											"type": "String",
+											"name": "category",
 											"physicalType": "UTF8"
 										}
 									},
 									{
 										"source": {
-											"name": "SKU",
+											"name": "Weight",
 											"type": "String",
 											"physicalType": "String"
 										},
 										"sink": {
-											"name": "SKU",
-											"type": "String",
+											"name": "weight",
 											"physicalType": "UTF8"
 										}
 									},
 									{
 										"source": {
-											"name": "Size",
+											"name": "TP",
 											"type": "String",
 											"physicalType": "String"
 										},
 										"sink": {
-											"name": "Size",
-											"type": "String",
+											"name": "tp",
 											"physicalType": "UTF8"
 										}
 									},
 									{
 										"source": {
-											"name": "PCS",
+											"name": "MRP Old",
 											"type": "String",
 											"physicalType": "String"
 										},
 										"sink": {
-											"name": "PCS",
-											"type": "String",
+											"name": "mrp_Old",
 											"physicalType": "UTF8"
 										}
 									},
 									{
 										"source": {
-											"name": "RATE",
+											"name": "Final MRP Old",
 											"type": "String",
 											"physicalType": "String"
 										},
 										"sink": {
-											"name": "RATE",
-											"type": "String",
+											"name": "Final_MRP_Old",
 											"physicalType": "UTF8"
 										}
 									},
 									{
 										"source": {
-											"name": "GROSS AMT",
+											"name": "Ajio MRP",
 											"type": "String",
 											"physicalType": "String"
 										},
 										"sink": {
-											"name": "GROSSAMT",
+											"name": "Ajio_MRP",
+											"physicalType": "UTF8"
+										}
+									},
+									{
+										"source": {
+											"name": "Amazon MRP",
+											"type": "String",
+											"physicalType": "String"
+										},
+										"sink": {
+											"name": "Amazon_MRP",
+											"physicalType": "UTF8"
+										}
+									},
+									{
+										"source": {
+											"name": "Amazon FBA MRP",
+											"type": "String",
+											"physicalType": "String"
+										},
+										"sink": {
+											"name": "Amazon_FBA_MRP",
+											"physicalType": "UTF8"
+										}
+									},
+									{
+										"source": {
+											"name": "Flipkart MRP",
+											"type": "String",
+											"physicalType": "String"
+										},
+										"sink": {
+											"name": "Flipkart_MRP",
+											"physicalType": "UTF8"
+										}
+									},
+									{
+										"source": {
+											"name": "Limeroad MRP",
+											"type": "String",
+											"physicalType": "String"
+										},
+										"sink": {
+											"name": "Limeroad_MRP",
+											"physicalType": "UTF8"
+										}
+									},
+									{
+										"source": {
+											"name": "Myntra MRP",
+											"type": "String",
+											"physicalType": "String"
+										},
+										"sink": {
+											"name": "Myntra_MRP",
+											"physicalType": "UTF8"
+										}
+									},
+									{
+										"source": {
+											"name": "Paytm MRP",
+											"type": "String",
+											"physicalType": "String"
+										},
+										"sink": {
+											"name": "Paytm_MRP",
+											"physicalType": "UTF8"
+										}
+									},
+									{
+										"source": {
+											"name": "Snapdeal MRP",
+											"type": "String",
+											"physicalType": "String"
+										},
+										"sink": {
+											"name": "Snapdeal_MRP",
 											"physicalType": "UTF8"
 										}
 									}
 								],
 								"typeConversion": true,
 								"typeConversionSettings": {
-									"allowDataTruncation": true,
+									"allowDataTruncation": false,
 									"treatBooleanAsNumber": false
 								}
 							}
@@ -3921,7 +3990,7 @@
 					"recurrence": {
 						"frequency": "Day",
 						"interval": 1,
-						"startTime": "2023-12-15T21:00:00",
+						"startTime": "2023-12-15T21:15:00",
 						"timeZone": "India Standard Time"
 					}
 				}
