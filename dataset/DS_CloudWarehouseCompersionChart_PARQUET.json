@@ -1,0 +1,20 @@
+{
+	"name": "DS_CloudWarehouseCompersionChart_PARQUET",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_CloudWarehouseCompersionChart_PARQUET",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "cloud_warehouse_compersion_chart",
+				"fileSystem": "output"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}

@@ -1,0 +1,24 @@
+{
+	"name": "EVT_TRIGGER_CLOUDWAREHOUSE",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_CloudWarehouseCompersionChart",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/input/blobs/cloud_warehouse_compersionchart/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/ebf9de76-97ab-4029-b09a-0e5b73edc314/resourceGroups/rg_dev_ecommerse/providers/Microsoft.Storage/storageAccounts/adlsdevecom",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

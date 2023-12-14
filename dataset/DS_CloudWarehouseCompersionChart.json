@@ -1,0 +1,41 @@
+{
+	"name": "DS_CloudWarehouseCompersionChart",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_DS_CloudWarehouseCompersionChart",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "Cloud Warehouse Compersion Chart.csv",
+				"folderPath": "cloud_warehouse_compersionchart",
+				"fileSystem": "input"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "index",
+				"type": "String"
+			},
+			{
+				"name": "Shiprocket",
+				"type": "String"
+			},
+			{
+				"name": "Unnamed: 1",
+				"type": "String"
+			},
+			{
+				"name": "INCREFF",
+				"type": "String"
+			}
+		]
+	}
+}
